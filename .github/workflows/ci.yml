@@ -21,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm run test --coverage
+        run: npm run test
 
   style:
     name: Style
@@ -42,4 +42,4 @@ jobs:
         run: npm run format:check
 
       - name: Run lint
-        run: npm run lint
+        run: npm run lint --max-warnings 0
